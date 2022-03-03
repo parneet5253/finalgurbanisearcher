@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#3a3a4c"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewa1"
+        android:layout_width="412sp"
+        android:layout_height="269sp"
+        android:background="@drawable/soundwave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/audioicon" />
+
+    <TextView
+        android:id="@+id/audio_name"
+        android:layout_width="221sp"
+        android:layout_height="50sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602" />
+
+    <TextView
+        android:id="@+id/add_to_favourates"
+        android:layout_width="120sp"
+        android:layout_height="32sp"
+        android:text="Add to Favourite"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.658" />
+
+    <SeekBar
+        android:id="@+id/PlayerSeekbar"
+        android:layout_width="358sp"
+        android:layout_height="52sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.735" />
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="53sp"
+        android:layout_height="22sp"
+        android:layout_marginBottom="164sp"
+        android:text="0:00"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3:34"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765" />
+
+    <LinearLayout
+        android:id="@+id/linearLayouta"
+        android:layout_width="420sp"
+        android:layout_height="96sp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="106sp"
+            android:layout_height="29sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/next" />
+
+        <ImageView
+            android:id="@+id/fastBackword"
+            android:layout_width="52sp"
+            android:layout_height="25sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/previoussong" />
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="85sp"
+            android:layout_height="85sp"
+            android:layout_weight="1"
+             />
+
+        <ImageView
+            android:id="@+id/fastForward"
+            android:layout_width="52sp"
+            android:layout_height="25sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nextsong" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="106sp"
+            android:layout_height="29sp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/nextsong3x" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

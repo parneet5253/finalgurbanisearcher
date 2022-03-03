@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191823"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardLiveRadio"
+        app:cardCornerRadius="15sp"
+
+        android:layout_width="115dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="#3a3a4c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/liveKiratan"
+            android:layout_width="74dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/liveradio" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="79dp"
+            android:text="Live Radio"
+            android:textColor="@color/white" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardLocalFiles"
+        app:cardCornerRadius="15sp"
+        android:layout_width="115dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#3a3a4c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardLiveRadio"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="74dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/localfiles" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="80dp"
+            android:text="Locals Files"
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

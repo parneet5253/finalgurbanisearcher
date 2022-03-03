@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="home"
+        app:showAsAction="always"
+        tools:ignore="DuplicateIds">
+    </item>
+    <item
+        android:id="@+id/hukamnama"
+        android:icon="@drawable/hukumnama"
+        app:showAsAction="always"
+
+        android:title="hukamnama"
+        >
+    </item>
+    <item
+        android:id="@+id/restoreData"
+        app:showAsAction="always"
+        android:icon="@drawable/restore_data"
+        android:title="Restore Data"
+        >
+
+    </item>
+    <item
+        android:id="@+id/backData"
+        android:icon="@drawable/backup_data"
+        app:showAsAction="always"
+        android:title="Back Up Data"
+        >
+    </item>
+
+    <item
+        android:id="@+id/shabadkosh"
+        app:showAsAction="always"
+        android:icon="@drawable/sabdkosh"
+        android:title="Shabadkosh"
+        >
+
+    </item>
+</menu>
