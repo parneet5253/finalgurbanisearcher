@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpVideos">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#201F2A"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A"
+            >
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:text="Help Videos"
+                android:textColor="@color/white"
+                android:textSize="28dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+                android:layout_marginTop="58dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+            android:text="Image below will take you to www.gurbanisearcher.com where
+in you can watch help videos to acquaint yourself with the key
+features of Gurbani Searcher. Please make sure you have good
+internet connectivity to watch the help and learn to use the
+software more effectively for your day-to-day usage. A big thanks to S. Harpreet Singh, CEO Bhaani Consulting and Sn
+Gurpreet Kaur, ICT Customer Support Officer at Bhaani
+Consulting for authoring and launching the new website to
+manage the collection. They have worked hard to meticulously
+choose the common workflows to convert them as videos to
+help the community.    ">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Browsing Bani By ..."
+                android:textColor="@color/white"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold"
+                android:textSize="28dp"
+                android:layout_marginLeft="20dp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Search by Lorem"
+                android:textColor="@color/white"
+                android:layout_marginTop="56dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="94dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text="This search is supported for SGGS bani only and one can key-in
+any AMg of SGGS to go to appropriate AMg. In case of Granth
+View, the system will automatically bookmark the location and
+come back to the original place from where one left. In case of
+Auto Scroll View system will not remember the location
+automatically, but if user has bookmarked a location by long
+clicking a line, it will open at the same location.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Search by First Char"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="68dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text="This search is supported for all the banis. The search's scope is
+limited to the currently loaded shabad. e.g. if the currently
+loaded AMg in SGGS is 1, then searching rjqq will not find
+anything as there is no shabad in AMg 1 where line's first
+character of words start with rjqq
+">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Search by Word"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="68dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text="This search is supported for all the banis. The search's scope is
+limited to the currently loaded shabad. e.g. if the currently
+loaded AMg in SGGS is 1, then searching rjqq will not find
+anything as there is no shabad in AMg 1 where line's first
+character of words start with ragg">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Search by Page"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="68dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text="This search is supported for all the banis in Granth View only.
+One can navigate through the pages shown at the top corner of the Granth View">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunder Gutka"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "One can open the banis in sunder gutka by clicking bani from
+the list. If one wants to open the bani from begning, then click
+the toggle button on right to ensure that it is megenta/blue and
+then open the bani or else if one is interested in going back to
+the last opened page in case of Granth View toggle the
+button to green. In case of Auto Scroll View the bani will
+open at the last bookmarked location if the toggle is green.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shabad Navigation"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "In order to navigate to the next or previous shabad, one can
+open the menu and click the Next or Prev button to go to
+the next shabad as it appears in SGGS or Vaar by Bhai
+Gurdas Ji. One can also flick (left/Right) to turn the page in
+required direction. One can start the auto scroll by clicking play
+button, which will appear once user drags on the text. The
+speed and direction of the scroll is controlled by the velocity
+with which user flicks the screen. User can pause the scroll
+temporarily by holding/touching the screen. Lifting the finger
+will resume the scroll in the appropriate direction. Double tap
+on screen will stop/start the auto scroll at any point depending
+upon the initial state. If the view is auto scrolling, the double tab
+will stop it and vice versa. These gestures work on active area
+of the screen. The active area is the area where there is no
+pop-ups showing on the screen.
+.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookmarking Bani Location"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="74dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "Bookmarking is supported on Bani's AutoScrollView. One can
+Long Click on the line, a small arrow will appear to show the
+bookmark. When one comes back to the same bani, the screen
+automatic scrolls to position the bookmarked line on screen.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Source"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sri Guru Granth Shaib Ji"
+                android:textSize="20dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="115dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+
+                android:text= "Bookmarking is supported on Bani's AutoScrollView. One can
+Long Click on the line, a small arrow will appear to show the
+bookmark. When one comes back to the same bani, the screen
+automatic scrolls to position the bookmarked line on screen.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Mode"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1st Chars"
+                android:textSize="20dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="105dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+
+                android:text= "In this mode, the input characters are interpreted as first
+characters of words. Search engine uses the selected Query
+Format to arrive at the results. The in-line search is enabled.
+One can select this mode either from the shortcut at the main
+UI (by clicking at the icon on top left) or through the setting
+menu.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Word"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp">
+        </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="85dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+
+                android:text= "In this mode, the input characters are interpreted as whole
+wordof SGGS. One can type partial words coupled with right
+Query Format to search the shabad from SGGS. The in-line
+search is enabled. One can select this mode either from the
+shortcut at the main UI (by clicking at the icon on top left) or
+through the settings menu. Example: if the entered query is rsn
+jpq and if the Query Format is Assume Trailing Wildcard()
+then rsn jpq* will be used for the search. This search will return
+all the shabads which have both the words.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raag"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="85dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+
+                android:text= "In this mode, the input characters are interpreted as Raag of
+SGGS. One can type partial words coupled with right Query
+                Format to search the shabad from SGGS. The in-line search is
+enabled. One can select this mode either from the shortcut at
+the main UI (by clicking at the icon on top left) or through the
+settings menu.
+Example: if the entered query is gauV pUrbI and if the Query
+Format is Assume Trailing Wildcard() then gauV pUrbI* will
+be used for the search. This search will return all the shabads
+which have both the words..">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vaaran Bhai Gurdas Ji"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="85dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+
+                android:text= "Any search performed will be done on Vaaran by Bhai Gurdas
+Ji. The short-cut to choose this mode is to long press on search
+icon on top left side and select the Bhai Gurdas Ji as data
+source.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Mode"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1st Chars"
+                android:textSize="20dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="85dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+
+                android:text= "In this mode, the input characters are interpreted as first
+characters of words. Search engine uses the selected Query
+Format to arrive at the results. The in-line search is enabled.
+One can select this mode either from the shortcut at the main
+UI (by clicking at the icon on top left) or through the setting
+menu.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Word"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="85dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "In this mode, the input characters are interpreted as whole
+wordof SGGS. One can type partial words coupled with right
+Query Format to search the shabad from SGGS. The in-line
+search is enabled. One can select this mode either from the
+shortcut at the main UI (by clicking at the icon on top left) or
+through the settings menu. Example: if the entered query is rsn
+jpq and if the Query Format is Assume Trailing Wildcard()
+then rsn jpq* will be used for the search. This search will return
+all the shabads which have both the words.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raag"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="85dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+
+                android:text= "In this mode, the input characters are interpreted as Raag of
+SGGS. One can type partial words coupled with right Query
+                Format to search the shabad from SGGS. The in-line search is
+enabled. One can select this mode either from the shortcut at
+the main UI (by clicking at the icon on top left) or through the
+settings menu.
+Example: if the entered query is gauV pUrbI and if the Query
+Format is Assume Trailing Wildcard() then gauV pUrbI* will
+be used for the search. This search will return all the shabads
+which have both the words..">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vaaran Bhai Gurdas Ji"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="85dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "Any search performed will be done on Vaaran by Bhai Gurdas
+Ji. The short-cut to choose this mode is to long press on search
+icon on top left side and select the Bhai Gurdas Ji as data
+source.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Query Format"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="85dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "The entered query will be appended with a trailing wildcard
+Example: if the entered query is rjq then rjq* will be used for the
+search. This search will be useful to search the shabads in
+which there is a line whose first few words starts with the
+characters mentioned in the query">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

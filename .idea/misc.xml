@@ -3,7 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.15" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/activity_help_videos.xml" value="0.1898238747553816" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/activity_live_kirtan_online_radio.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/activity_setting.xml" value="0.15" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/audio_list.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/audio_player.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/backup_data.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/calender.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/card_view_design.xml" value="0.20208333333333334" />
         <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/compiled_hymns.xml" value="0.14945652173913043" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/home.xml" value="0.25" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/hukamnama.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/hymn_card_view.xml" value="0.20208333333333334" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/item_view_calendar_event.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/live_kirtan.xml" value="0.17" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/radio_list.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/restore_data.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/shabadkosh.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/layout/song_list.xml" value="0.11413043478260869" />
+        <entry key="..\:/FinalGurbaniSearcher/app/src/main/res/menu/menu_main.xml" value="0.20208333333333334" />
         <entry key="..\:/Users/sony/AndroidStudioProjects/FinalGurbaniSearcher/app/src/main/res/drawable-v24/bg_rounded1.xml" value="0.2203125" />
         <entry key="..\:/Users/sony/AndroidStudioProjects/FinalGurbaniSearcher/app/src/main/res/drawable-v24/ic_baseline_backup_24.xml" value="0.2203125" />
         <entry key="..\:/Users/sony/AndroidStudioProjects/FinalGurbaniSearcher/app/src/main/res/drawable-v24/ic_baseline_home_24.xml" value="0.2203125" />

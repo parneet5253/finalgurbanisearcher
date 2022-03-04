@@ -2,16 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.finalgurbanisearcher">
 
-
-
-    <uses-permission android:name="android.permission.INTERNET">
-
-    </uses-permission>
-
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE">
-
-</uses-permission>
-
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/TopAppBarTheme">
         <activity
-            android:name=".CompiledHymnOnclickEdit"/>
+            android:name=".HelpVideos"
+            android:exported="false" />
+        <activity
+            android:name=".setting"
+            android:exported="false" />
+        <activity android:name=".CompiledHymnOnclickEdit" />
         <activity
             android:name=".LiveKirtanOnlineRadio"
             android:exported="false" />
@@ -36,11 +33,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LiveKirtan"></activity>
+        <activity android:name=".LiveKirtan" />
         <activity android:name=".CompiledHymns" />
         <activity android:name=".AudioPlayer" />
         <activity android:name=".CalenderClass" />
         <activity android:name=".SongList" />
+        <activity android:name=".HukamNama" />
+        <activity android:name=".BackupData" />
+        <activity android:name=".RestoreData" />
+        <activity android:name=".ShabadKosh" />
     </application>
 
 </manifest>

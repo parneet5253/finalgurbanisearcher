@@ -1,10 +1,12 @@
 package com.example.finalgurbanisearcher
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.applandeo.materialcalendarview.EventDay
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -14,6 +16,43 @@ class CalenderClass : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.calender)
+
+
+
+        val bottomMenuBar: BottomNavigationView? = findViewById<BottomNavigationView>(R.id.bottomMenuBar)
+        bottomMenuBar?.setOnNavigationItemSelectedListener {
+
+
+            when (it.itemId) {
+                R.id.home -> {
+                    val i = Intent(this@CalenderClass ,MainActivity::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.hukamnama -> {
+                    val i = Intent(this@CalenderClass ,HukamNama::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.restoreData -> {
+                    val i = Intent(this@CalenderClass,RestoreData::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.backData -> {
+                    val i = Intent(this@CalenderClass,BackupData::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.shabadkosh -> {
+                    val i = Intent(this@CalenderClass,ShabadKosh::class.java)
+                    startActivity(i)
+                    finish()
+                }
+
+            }
+            true
+        }
 
 
         val calender =

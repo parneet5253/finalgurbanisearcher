@@ -2,22 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
-
-
-
-
-    <item android:title="Item"
+    <item
+        android:id="@+id/favourite"
+        android:title="Item"
         android:icon="@drawable/favourate"
         app:showAsAction="always">
-
-
-
     </item>
 <item
+    android:id="@+id/setting"
     android:title="New One"
     android:icon="@drawable/ic_baseline_settings_24"
     app:showAsAction="always">
-
 </item>
 
 

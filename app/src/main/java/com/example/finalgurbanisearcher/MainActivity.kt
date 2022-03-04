@@ -1,8 +1,10 @@
 package com.example.finalgurbanisearcher
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.widget.FrameLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
@@ -21,9 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-//
         val data = ArrayList<ItemsViewModel>()
-
 
         data.add(ItemsViewModel(R.drawable.ggs_i, "Sri Guru Granth Sahib Ji ","lorem lpsum,sometimes reffered to as the placeholder text used in design "))
         data.add(ItemsViewModel(R.drawable.sunder_gutka3x, "Sunder Gutka ","lorem lpsum,sometimes reffered to as the placeholder text used in design "))
@@ -43,10 +43,10 @@ class MainActivity : AppCompatActivity() {
         // Setting the Adapter with the recyclerview
 
         val firstFragment = Home(data)
-        val secondFragment = HukamNama()
-        val thirdFragment = RestoreData()
-        val fourthFragment = BackupData()
-        val fifthFragment = ShabadKosh()
+//        val secondFragment = HukamNama()
+//        val thirdFragment = RestoreData()
+//        val fourthFragment = BackupData()
+//        val fifthFragment = ShabadKosh()
 
 
 
@@ -57,10 +57,26 @@ class MainActivity : AppCompatActivity() {
 
             when (it.itemId) {
                 R.id.home -> setCurrentFragment(firstFragment)
-                R.id.hukamnama -> setCurrentFragment(secondFragment)
-                R.id.restoreData -> setCurrentFragment(thirdFragment)
-                R.id.backData -> setCurrentFragment(fourthFragment)
-                R.id.shabadkosh -> setCurrentFragment(fifthFragment)
+                R.id.hukamnama -> {
+                    val i = Intent(this@MainActivity,HukamNama::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.restoreData -> {
+                    val i = Intent(this@MainActivity,RestoreData::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.backData -> {
+                    val i = Intent(this@MainActivity,BackupData::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.shabadkosh -> {
+                    val i = Intent(this@MainActivity,ShabadKosh::class.java)
+                    startActivity(i)
+                    finish()
+                }
 
             }
             true
@@ -73,15 +89,21 @@ class MainActivity : AppCompatActivity() {
             commit()
         }
 
-
-
-
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-
-        menuInflater.inflate(R.menu.menu_main,menu)
+        menuInflater.inflate(R.menu.menu_main, menu)
         return true
+
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+             R.id.setting->{
+                 val i = Intent(this@MainActivity,setting::class.java)
+                 startActivity(i)
+            }
 
+
+        }
+    return true
+    }
 }
