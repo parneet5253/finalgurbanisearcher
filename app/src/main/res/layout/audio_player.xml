@@ -12,12 +12,10 @@
         android:layout_width="412sp"
         android:layout_height="269sp"
         android:background="@drawable/soundwave"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
-        app:srcCompat="@drawable/audioicon" />
+        app:srcCompat="@drawable/audioicon"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="30dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/audio_name"

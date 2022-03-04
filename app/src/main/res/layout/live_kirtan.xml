@@ -7,15 +7,38 @@
     android:background="#191823"
     tools:context=".MainActivity">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomMenuBar"
+        style="@style/menu_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:fabAlignmentMode="end"
+        app:fabCradleMargin="5dp"
+        app:fabCradleRoundedCornerRadius="8dp"
+        app:itemIconTint="@drawable/bottom_navigation_selector"
+        app:itemTextAppearanceActive="@style/menu_text_style"
+        app:itemTextAppearanceInactive="@style/menu_text_style"
+        app:itemTextColor="@drawable/bottom_navigation_selector"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/toolbar"
+        tools:ignore="BottomAppBar,MissingConstraints" />
+
     <androidx.cardview.widget.CardView
 
         android:id="@+id/cardLiveRadio"
         app:cardCornerRadius="15sp"
 
-        android:layout_width="115dp"
-        android:layout_height="102dp"
-        android:layout_marginTop="104dp"
-        android:backgroundTint="#3a3a4c"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#201F2A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,18 +46,20 @@
 
         <ImageView
             android:id="@+id/liveKiratan"
-            android:layout_width="74dp"
-            android:layout_height="61dp"
-            android:layout_marginLeft="22dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
             app:srcCompat="@drawable/liveradio" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="79dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="150dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
             android:text="Live Radio"
             android:textColor="@color/white" />
 
@@ -44,10 +69,10 @@
 
         android:id="@+id/cardLocalFiles"
         app:cardCornerRadius="15sp"
-        android:layout_width="115dp"
-        android:layout_height="107dp"
-        android:layout_marginTop="108dp"
-        android:backgroundTint="#3a3a4c"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#201F2A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,19 +82,21 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="74dp"
-            android:layout_height="61dp"
-            android:layout_marginLeft="22dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/localfiles" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="22dp"
-            android:layout_marginTop="80dp"
-            android:text="Locals Files"
+            android:layout_marginLeft="40dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginTop="150dp"
+            android:text="Locals File"
             android:textColor="@color/white" />
     </androidx.cardview.widget.CardView>
 

@@ -4,9 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/homePageBackgroundColor"
+    android:background="#191823"
     tools:context=".MainActivity">
-
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomMenuBar"
+        style="@style/menu_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:fabAlignmentMode="end"
+        app:fabCradleMargin="5dp"
+        app:fabCradleRoundedCornerRadius="8dp"
+        app:itemIconTint="@drawable/bottom_navigation_selector"
+        app:itemTextAppearanceActive="@style/menu_text_style"
+        app:itemTextAppearanceInactive="@style/menu_text_style"
+        app:itemTextColor="@drawable/bottom_navigation_selector"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/toolbar"
+        tools:ignore="BottomAppBar,MissingConstraints" />
     <TextView
         android:id="@+id/textView"
         android:layout_marginBottom="10sp"
@@ -15,6 +36,7 @@
         android:layout_marginTop="24dp"
         android:text="All Compiled Hymns"
         android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,63 +49,78 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_marginTop="20sp"
-        android:layout_width="wrap_content"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
         app:cardCornerRadius="15sp"
+        android:backgroundTint="#201F2A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints">
 
-        <SearchView
-            android:layout_width="370sp"
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="320dp"
             android:queryHint="Search Here"
+            android:layout_marginLeft="5dp"
+            app:queryHint="search here"
             android:layout_height="match_parent"
-            android:queryBackground="@color/homePageOtherColor"
-            android:background="@color/homePageOtherColor">
+           android:backgroundTint="#201F2A"
+           >
 
 
-        </SearchView>
+        </androidx.appcompat.widget.SearchView>
 
 
     </androidx.cardview.widget.CardView>
+
     <ScrollView
-        android:orientation="vertical"
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="350sp"
-        android:layout_marginTop="50sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
         android:layout_marginBottom="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView"
         app:layout_constraintVertical_bias="0.164">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewCompiledHymns"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="#201F2A">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCompiledHymns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+
+        </androidx.cardview.widget.CardView>
     </ScrollView>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
-        app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="@color/orange"
-        android:src="@drawable/add_comp_hymn">
-
-
+        android:src="@drawable/add_comp_hymn"
+        app:layout_constraintBottom_toTopOf="@+id/bottomMenuBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.603">
 
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

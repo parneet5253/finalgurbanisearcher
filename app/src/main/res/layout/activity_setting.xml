@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="#3a3a4c">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/helpvideos"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="0dp"
+        android:backgroundTint="#201F2A">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Help Videos"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="30dp"
+    android:textColor="@color/white"
+    android:textSize="25dp">
+</TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_arrow_right">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Installation"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/orange"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Subscriptions"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="20dp"
+            android:text="Manage your subscriptions"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_baseline_settings_24">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="1dp"
+
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Index Installation"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"
+            android:text="Please choose the installation Location for
+the index files(DB)       "
+            android:textColor="@color/white"></TextView>
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_baseline_settings_24">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="14dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Data Source"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="20dp"
+            android:text="Select the data source"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Backup"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Enables periodic data backup. This typically
+happens during night when device is idle."
+            android:textColor="@color/white">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable built-in Keyboard"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Enables or disables Built-in Gurmukhi
+Keyboard For Search."
+            android:textColor="@color/white">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shabad Language"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Please check the language to enable.
+"
+            android:textColor="@color/white">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Larivaar Text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Check this box to change over to Larivaar
+text."
+            android:textColor="@color/white">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appearance"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="View Options."
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Allows to select view type for viewing
+shabads"
+            android:textColor="@color/white">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Full Screen View"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Enables or disables Full Screen View While
+Reading Gurbani."
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Theme"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Select the theme"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage Themes"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Create, Update, Delete Custom Themes"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Option"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/orange"
+            android:textSize="14dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Auto Query Format"
+            android:textColor="@color/white">
+
+        </TextView>
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Check this box to enable auto query format.
+"
+            android:textColor="@color/white">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Query Format"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+           >
+        </TextView>
+
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Please select query format/syntax."
+            android:textColor="@color/white">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In-Line Search: Threshold
+"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Minimum number of characters required
+for In-Line search to activate.
+"
+            android:textColor="@color/white">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In-Line Search: Max hits
+"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Number of results to display for in-line
+search in dron down Valid Dance 15.201
+
+"
+            android:textColor="@color/white">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Search: Max hits
+"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Number of results to display for Main
+Search. Valid Range [50-600].
+
+"
+            android:textColor="@color/white">
+
+        </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorites
+"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/orange"
+            android:textSize="16dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Favorites Field"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Please select the first field to display in
+favorites"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calendar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/orange"
+            android:textSize="16dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Calendar Settings"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Allows to customize the Calendar"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/orange"
+            android:textSize="16dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Share Format"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Choose the format for Sharing Bani."
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunder Gutka"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/orange"
+            android:textSize="16dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:text="Enable Translations"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:text="Enable Translations for Sunder Gutka"
+            android:textColor="@color/white">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customize Bani Order"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Customize Bani Order in Sunder Gutka"
+            android:textColor="@color/white">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="1dp"
+        android:backgroundTint="#201F2A">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experimental"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/orange"
+            android:textSize="16dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:text="View Options"
+            android:textColor="@color/white">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="73dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="14dp"
+            android:text="Experimental feature to change view
+options"
+            android:textColor="@color/white">
+
+        </TextView>
+    </androidx.cardview.widget.CardView>
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="1dp"
+    android:backgroundTint="#201F2A">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="App Version: 13.1.9[155][01ec513ab8ad1e5..
+-Brought To You By The Grace Of WaheGuru Ji!
+"
+        android:textColor="@color/white"
+        android:layout_marginLeft="20dp">
+    </TextView>
+
+
+</androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

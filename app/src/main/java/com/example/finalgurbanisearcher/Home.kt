@@ -39,7 +39,7 @@ recyclerview?.addItemDecoration(iteDecorator1)
         val data = ArrayList<ItemsViewModel>()
 
 
-             data.add(ItemsViewModel(R.drawable.ggs_i, "Sri Guru Granth Sahib Ji ","lorem lpsum,sometimes reffered to as the placeholder text used in design "))
+             data.add(ItemsViewModel(R.drawable.book3x, "Sri Guru Granth Sahib Ji ","lorem lpsum,sometimes reffered to as the placeholder text used in design "))
              data.add(ItemsViewModel(R.drawable.sunder_gutka3x, "Sunder Gutka ","lorem lpsum,sometimes reffered to as the placeholder text used in design "))
              data.add(ItemsViewModel(R.drawable.kabit_bhai_gurdas_ji, "Kabit Bhai Gurdas Ji ","lorem lpsum,sometimes reffered to as the placeholder text used in design "))
              data.add(ItemsViewModel(R.drawable.book3x, "Sri Dasham Granth Sahib Ji ","lorem lpsum,sometimes reffered to as the placeholder text used in design "))
@@ -103,6 +103,6 @@ recyclerview?.addItemDecoration(iteDecorator1)
     override fun onNoteClick(position: Int) {
 
 mList.get(position)
-        Toast.makeText(context,"you Clicked $position ",Toast.LENGTH_SHORT).show()
+       // Toast.makeText(context,"you Clicked $position ",Toast.LENGTH_SHORT).show()
     }
 }
