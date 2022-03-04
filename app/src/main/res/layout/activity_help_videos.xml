@@ -669,11 +669,22 @@ source.">
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp">
             </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assume Trailing Wildcard(*)"
+                android:textColor="@color/white"
+                android:layout_marginTop="55dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                android:layout_marginTop="85dp"
+                android:layout_marginTop="95dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:justificationMode="inter_word"
@@ -685,6 +696,252 @@ characters mentioned in the query">
             </TextView>
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assume Leading and Trailing Wildcard(*)"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "The entered query will be appended with a leading and trailing
+wildcard
+Example: if the entered query is rjq then rjq will be used for the
+search. This search will be useful to search shabads for which
+the given letters occur at the anywhere within the line.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exact Search"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "The entered query will be used without any modification for
+search. User can use any wildcard character (such as *, +, ?) to
+form their query.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookmarking a Shabad"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "Please use favorites icon(Star) on the Shabadview to bookmark
+the shabad for later use. You can long click on the star
+icon(when selected state) to add a custom tag.
+.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In-Line Search: Threshold"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "Specify the maximum number of search results to return for
+Main search. Please be aware that a low value of Max hits will
+give better performance. It is recommended to set Assume
+Trailing Wildcard(*) under Query Options for even better
+performance.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In-Line Search: Max Hits"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "Specify the maximum number of search results to return for in six line search.
+            i.e As you type the search engine will make best
+attempt to return the results in a drop down. Please be aware
+that a low value of Max hits and high value of threshold will
+give better performance. It is recommended to set Assume
+Trailing Wildcard(*) under Query Options for even better
+performance">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Search: Max Hits"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "Specify the maximum number of search results to return for
+Main search. Please be aware that a low value of Max hits will
+give better performance. It is recommended to set Assume
+Trailing Wildcard(*) under Query Options for even better
+performance.">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. CALSSIC"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "2. DARK.">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:justificationMode="inter_word"
+                android:text= "3. DARK CURSIVE">
+            </TextView>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#201F2A">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:justificationMode="inter_word"
+            android:text= "One can also create custom theme, by choosing Manage
+            Themes and the Create Theme option from settings. The
+themes can be later modified to change the fonts or font size or
+color via Update Theme option. The fonts size has been made
+specific to theme so that user can quickly change the theme to
+change all the displayble aspects at one shot. The typical use
+case is, when you want to project the bani over projector, one
+can make a Project theme with bigger fonts and can quickly
+toggle to this theme for projection. Later one can switch back to
+other theme with smaller fonts for day-to-day use.">
+        </TextView>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
