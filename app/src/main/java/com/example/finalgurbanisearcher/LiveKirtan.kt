@@ -9,16 +9,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class LiveKirtan : AppCompatActivity() {
 
 
-
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.live_kirtan)
 
-
-
             val bottomMenuBar: BottomNavigationView? = findViewById<BottomNavigationView>(R.id.bottomMenuBar)
             bottomMenuBar?.setOnNavigationItemSelectedListener {
-
 
                 when (it.itemId) {
                     R.id.home -> {

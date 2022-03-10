@@ -10,7 +10,7 @@ class setting : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_setting)
 
-        val cardhelpvideos = findViewById<CardView>(R.id.helpvideos)
+        val cardhelpvideos = findViewById<CardView>(R.id.helpvideo)
         cardhelpvideos.setOnClickListener{
 
             var intent = Intent(applicationContext,HelpVideos::class.java)

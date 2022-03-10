@@ -8,12 +8,53 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class CompiledHymns : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.compiled_hymns)
+
+        val bottomMenuBar: BottomNavigationView? = findViewById<BottomNavigationView>(R.id.bottomMenuBar)
+        bottomMenuBar!!.selectedItemId=R.id.home
+        bottomMenuBar?.setOnNavigationItemSelectedListener {
+
+
+            when (it.itemId) {
+                R.id.home -> {
+                    val i = Intent(this@CompiledHymns,MainActivity::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.hukamnama -> {
+                    val i = Intent(this@CompiledHymns ,HukamNama::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.restoreData -> {
+                    val i = Intent(this@CompiledHymns,RestoreData::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.backData -> {
+                    val i = Intent(this@CompiledHymns,BackupData::class.java)
+                    startActivity(i)
+                    finish()
+                }
+                R.id.shabadkosh -> {
+                    val i = Intent(this@CompiledHymns,ShabadKosh::class.java)
+                    startActivity(i)
+                    finish()
+                }
+
+            }
+            true
+        }
+
+
+
+
         val floatingButton =
             findViewById<com.google.android.material.floatingactionbutton.FloatingActionButton>(R.id.floatingButton)
 

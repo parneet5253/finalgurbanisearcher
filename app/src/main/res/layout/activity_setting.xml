@@ -18,7 +18,6 @@
    android:background="#3a3a4c">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/helpvideos"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:cardCornerRadius="0dp"
@@ -34,14 +33,23 @@
     android:textSize="25dp">
 </TextView>
 
-        <ImageView
+        <androidx.cardview.widget.CardView
+            android:id="@+id/helpvideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="300dp"
-            android:layout_marginTop="40dp"
-            android:src="@drawable/ic_arrow_right">
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="300sp"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:src="@drawable/ic_baseline_arrow_forward_24"
+                android:layout_height="30dp"
 
-        </ImageView>
+                android:background="#201F2A">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
