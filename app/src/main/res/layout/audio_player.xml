@@ -7,78 +7,71 @@
     android:background="#3a3a4c"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageViewa1"
-        android:layout_width="412sp"
-        android:layout_height="269sp"
-        android:background="@drawable/soundwave"
-        app:srcCompat="@drawable/audioicon"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="30dp"
-        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="406dp"
+        android:layout_height="460dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/audio_name"
-        android:layout_width="221sp"
-        android:layout_height="50sp"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.602" />
+        <ImageView
+            android:id="@+id/imageViewa1"
+            android:layout_width="wrap_content"
+            android:layout_height="265sp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/soundwave"
+            app:srcCompat="@drawable/audioicon"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/add_to_favourates"
-        android:layout_width="120sp"
-        android:layout_height="32sp"
-        android:text="Add to Favourite"
-        android:textColor="@color/white"
+        <TextView
+            android:id="@+id/audio_name"
+            android:layout_width="221sp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="74dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658" />
+        <TextView
+            android:id="@+id/add_to_favourates"
+            android:layout_width="120sp"
+            android:layout_height="20sp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="5dp"
+            android:text="Add to Favourite"
+            android:textColor="@color/white" />
 
-    <SeekBar
-        android:id="@+id/PlayerSeekbar"
-        android:layout_width="358sp"
-        android:layout_height="52sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.735" />
 
-    <TextView
-        android:id="@+id/current"
-        android:layout_width="53sp"
-        android:layout_height="22sp"
-        android:layout_marginBottom="164sp"
-        android:text="0:00"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent" />
+        <SeekBar
+            android:id="@+id/PlayerSeekbar"
+            android:layout_width="358sp"
+            android:layout_height="52sp"
+            android:layout_marginTop="5dp"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/total"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3:34"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.954"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765" />
+
+
+            <TextView
+                android:id="@+id/current"
+                android:layout_width="53sp"
+                android:layout_height="22sp"
+                android:text="0:00"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="230dp"
+                android:text="3:34"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
 
     <LinearLayout
         android:id="@+id/linearLayouta"
@@ -113,7 +106,6 @@
             android:layout_height="85sp"
             android:layout_weight="1"
              />
-
         <ImageView
             android:id="@+id/fastForward"
             android:layout_width="52sp"

@@ -17,7 +17,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="22dp"
             android:background="@color/homePageBackgroundColor"
             android:src="@drawable/musicplaybutton" />
 
@@ -26,7 +26,7 @@
             android:layout_width="220sp"
             android:layout_height="25sp"
             android:layout_marginStart="75dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@color/white"
@@ -37,7 +37,7 @@
             android:layout_width="220sp"
             android:layout_height="25sp"
             android:layout_marginStart="75dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="35dp"
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@color/white"
